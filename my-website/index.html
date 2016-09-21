@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body style ="background-color:#3399ff;">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <h1>"Cooper's website"</h1>
+  </body>
+    <img src="images/home.jpg" height="250">
+</style>
+<body>
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Randy')">Randy</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Dylan')">Dylan</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Kurtis')">Kurtis</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Cooper')">Cooper</a></li>
+</ul>
+
+<div id="Randy" class="tabcontent">
+  <h3>Randy</h3>
+  <p>My oldest brother he is 21 years old and he is a mechanic for the Peterson shop in Portland.</p>
+  </div>
+
+<div id="Dylan" class="tabcontent">
+  <h3>Dylan</h3>
+  <p>He is my second older brother he is 20 years old and is currently attending Eastern Washington university playing football there.</p>
+</div>
+
+<div id="Kurtis" class="tabcontent">
+  <h3>Kurtis</h3>
+  <p>My final brother he is 19 years old and currently going to SPSCC.</p>
+</div>
+
+<div id="Cooper" class="tabcontent">git remove - v
+  <h3>Cooper</h3>
+<p>That is me I am 16 and i am going to ths. My favorite food is soft serve icecream </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
